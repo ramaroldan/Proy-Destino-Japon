@@ -16,6 +16,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
+    height: 100%;
+    width: 100%;
 }
 
 .navbar {
@@ -114,17 +116,19 @@ span {
     padding-bottom: 3rem;
     display: flex;
     justify-content: center;
-    background: linear-gradient(0deg, rgb(92, 90, 92) 0%, white 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, white 100%);
 }
 
 #video_japon {
     width: 60%;
     height: 25rem;
     border: 0;
+    border-radius: 0.5rem;
+    border: 0.3rem groove teal;
 }
 
 .cultura_section {
-    background-color: rgb(250, 222, 252);
+    background-color: rgb(240, 191, 243);
     display: flex;
     justify-content: space-around;
     height: 28rem;
