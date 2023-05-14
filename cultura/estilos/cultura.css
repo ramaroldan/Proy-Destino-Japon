@@ -16,6 +16,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
+  height: 100%;
+  width: 100%;
 }
 
 .navbar {
@@ -69,7 +71,7 @@ span {
 }
 
 
-/* barra lateral va hacia los titulos de cada arttícuo */
+/* barra central va hacia los titulos de cada arttícuo */
 
 .contenido-nav {
   font-size: 1.6rem;
@@ -125,7 +127,7 @@ main {
 .titulo_principal{
   font-family: 'Concert One', cursive;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 4.1rem;
   color: #333;
   margin: 3rem 5rem;
   padding-bottom: 0rem;
@@ -144,7 +146,7 @@ main {
 
 .seccion_temas p {
   font-size: 1.3rem;
-  margin: 1rem 8rem 3rem 8rem;
+  margin: 1rem 10rem 3rem 10rem;
   font-family: 'Noto Serif JP', serif;
   text-align: justify;
 }
