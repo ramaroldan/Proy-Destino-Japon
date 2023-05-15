@@ -2,13 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Aplicar fondo con img
-    background-image: url(../img/t7.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
-    /*border: 2px solid black;*/
 }
 
 header {
@@ -16,19 +9,20 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    height: 100%;
-    width: 100%;
+    display: flex;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 #tituloJapon {
     font-family: 'Atma', cursive;
     color: white;
     margin-left: 1rem;
+    margin-top: 0.5rem;
     text-shadow: 1px 1px 2px black;
     /*sombra*/
 }
@@ -40,11 +34,12 @@ span {
 #logoIMG {
     width: 1.8rem;
     padding: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
 }
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     width: 50%;
     justify-content: space-around;
     padding-top: 1rem;
@@ -70,6 +65,11 @@ span {
     padding: 0.8rem;
 }
 
+main {
+    width: 100%;
+
+}
+
 .titulo_carrusel {
     font-family: 'Concert One', cursive;
     font-size: 2.5rem;
@@ -81,6 +81,10 @@ span {
     font-size: 1rem;
     text-shadow: 1px 1px 2px black;
     /*sombra*/
+}
+
+.carousel slide {
+    width: 100%;
 }
 
 /*img de carousel*/
@@ -135,7 +139,7 @@ span {
 }
 
 .title_cultura {
-    font-size: 2em;
+    font-size: 2rem;
     color: #191c32;
     padding: 2rem;
     padding-bottom: 0rem;
@@ -202,7 +206,7 @@ span {
 }
 
 .title_gastronomia {
-    font-size: 2em;
+    font-size: 2rem;
     color: #191c32;
     padding: 2rem;
     padding-bottom: 0rem;
@@ -269,7 +273,7 @@ span {
 }
 
 .title_turismo {
-    font-size: 2em;
+    font-size: 2rem;
     color: #191c32;
     padding: 2rem;
     padding-bottom: 0rem;
@@ -328,6 +332,13 @@ span {
     color: #1fcca1;
 }
 
+#flecha-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
 footer {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 1rem;
@@ -372,4 +383,174 @@ footer {
 #copyright_section {
     text-align: center;
     color: white;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 360px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu a {
+        font-size: 0.7rem;
+    }
+
+    /*video carrousel*/
+    .d-block {
+        height: 15rem;
+    }
+
+    #video_japon {
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    .cultura_section {
+       flex-direction: column;
+    }
+    
+    .title_cultura {
+        font-size: 1rem;
+        color: #191c32;
+        padding: 1rem;
+        padding-bottom: 0rem;
+        padding-top: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    #divider_cultura {
+        height: 2px;
+        width: 20px;
+        margin-left: 1rem;
+    }
+    
+    .info_cultura {
+        padding: 0.5rem 1rem;
+        font-size: xx-small;
+    }
+    
+    .img_cultura {
+        width: 100%;
+        height: 20rem;
+    }
+    
+    .button_cultura {
+        padding: 0.1rem 0.5rem;
+        margin-left: 8.5rem;
+        margin-bottom: 3rem;
+    }  
+
+    .gastronomia_section {
+        flex-direction: column;
+    }
+    
+    .title_gastronomia {
+        font-size: 1rem;
+        color: #191c32;
+        padding: 1rem;
+        padding-bottom: 0rem;
+        padding-top: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    #divider_gastronomia {
+        height: 2px;
+        width: 20px;
+        margin-left: 1rem;
+    }
+    
+    .info_gastronomia {
+        padding: 0.5rem 1rem;
+        font-size: xx-small;
+    }
+    
+    .img_gastronomia {
+        width: 100%;
+        height: 20rem;
+        padding-bottom: 1rem;
+    }
+    
+    .button_gastronomia {
+        padding: 0.1rem 0.5rem;
+        margin-left: 8.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .turismo_section {
+        flex-direction: column;
+    }
+    
+    .title_turismo {
+        font-size: 1rem;
+        color: #191c32;
+        padding: 1rem;
+        padding-bottom: 0rem;
+        padding-top: 1rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    #divider_turismo {
+        height: 2px;
+        width: 20px;
+        margin-left: 1rem;
+    }
+    
+    .info_turismo {
+        padding: 0.5rem 1rem;
+        font-size: xx-small;
+    }
+    
+    .img_turismo {
+        width: 100%;
+        height: 20rem;
+        padding-top: 1.5rem;
+    }
+    
+    .button_turismo {
+        padding: 0.1rem 0.5rem;
+        margin-left: 8.5rem;
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+    #footer_info {
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+    }
+    
+    .info_foot {
+        width: 100%;
+        font-size: small;
+    }
+    
+    .links_foot {
+        padding: 1rem;
+        font-size: small;
+    }
+    
+    .fab {
+        /*redes*/
+        font-size: 1.5rem;
+        padding: 0.2rem;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #copyright_section {
+        text-align: center;
+        color: white;
+        font-size: small;
+    }
+
 }
