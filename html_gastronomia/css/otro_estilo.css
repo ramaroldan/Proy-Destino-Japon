@@ -1,6 +1,3 @@
-.clase-dario-h1{
-    text-align: center;
-  }
 
 
   * {
@@ -29,14 +26,20 @@ header {
 }
 
 
-
 p {
-    background-color: white;
-  }
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 0.15rem;
+}
 
-  #copyright_section p {
-    background-color: transparent;
-  }
+#copyright_section p {
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+
+
+
 
 
 #tituloJapon {
@@ -85,17 +88,17 @@ span {
 }
 
 main{
-    background:  rgba(255, 204, 153, 0.8) 
+    background:  rgba(255, 204, 153, 0.8);   
 }
 
-#img_turismo{
+#img_gastronomia{
     display: flex;
     width: 100%;
     height: 41rem;
 }
 
  
-#turismoJapon {
+#gastronomiaJapon {
     font-family: 'Concert One', cursive;
     font-size: 4.5rem;
     text-align: center;
@@ -114,61 +117,43 @@ h2{
     background:  rgba(241, 181, 157, 0.998) 
 }
 
-.sectionVisitar{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4rem;
-    justify-content: space-around;
-    background: rgb(122, 239, 206);
-    background: linear-gradient(0deg, rgb(90, 189, 238) 0%, rgba(157, 241, 222, 0.998) 100%);
-}
-   
-.imgVisitar{
-    height: 15rem;
-    width: 100%;
-    border-radius: 5%;
-    margin-bottom: 1rem;
-}
-
-.articleCiudad{
-   margin-bottom: 2rem;
-   background-color: whitesmoke;
-   padding: 1rem;
-   width: 22.5rem;
-   border-radius: 5%;
-   text-align: justify;
-}
-
-.tituloArticle a{
-    text-decoration: none;
-    color:black;
-}
-
-.mapa_japon{
-    height: 41rem;
-    padding: 1rem;
-    margin-top: 1rem;
-}
-
-.title_section{
-    color:black;
-    text-shadow: 1px 1px 2px black;
+#Platos_típicos h3 {
+    
     font-family: 'Concert One', cursive;
-    font-size: xxx-large;
+    font-size: 4rem;
     text-align: center;
-}
-
-#mapa{
-    margin: 1.5rem 5rem;
-    width: 90%;
-    height: 30rem;
-    justify-content:center;
-    padding-bottom: 1rem;
-}
-
-.fa-map-location-dot{
+    padding-top: 1.5rem;
     color:darkcyan;
+    text-shadow: 1px 1px 2px black;
 }
+
+.plato{
+  display: flex;
+  
+}
+
+#Postres h3 {
+    font-family: 'Concert One', cursive;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    color:darkcyan;
+    text-shadow: 1px 1px 2px black;
+}
+
+.subir{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #f00;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
 /*FOOTER*/
 footer {
     background-color: rgba(0, 0, 0, 0.8);
@@ -215,4 +200,88 @@ footer {
 #copyright_section {
     text-align: center;
     color: white;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.st{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 1.1rem;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+  padding: 1rem;
+}
+/* Media query para tablet en orientación horizontal */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .st {
+    /* Ajusta el tamaño del contenedor */
+    width: 60%;
+  }
+  img {
+    /* Ajusta el tamaño de la imagen */
+    width: 400px;
+    height: auto;
+  }
+  .titulo_plato {
+    /* Ajusta el tamaño de fuente y espaciado */
+    font-size: 1.8rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Media query para ordenador de escritorio */
+@media screen and (min-width: 1024px) {
+  .st {
+    /* Ajusta el tamaño del contenedor */
+    width: 40%;
+  }
+  img {
+    /* Ajusta el tamaño de la imagen */
+    width: 600px;
+    height: auto;
+  }
+  .titulo_plato {
+    /* Ajusta el tamaño de fuente y espaciado */
+    font-size: 2.1rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .stg {
+    flex-direction: column;
+  }
+  .stg img {
+    width: 100%; /* Para asegurarse de que la imagen se ajuste al ancho del contenedor */
+    margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
+  }
+}
+
+
+
+
+
+
+
+.titulo_plato{
+  font-family: 'Concert One', cursive;
+  font-size: 2.1rem;
+  padding: 1rem;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  color:darkcyan;
+  text-shadow: 1px 1px 2px black;
+  
+
+
 }
