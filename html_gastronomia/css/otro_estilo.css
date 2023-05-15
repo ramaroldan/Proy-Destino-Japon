@@ -88,7 +88,7 @@ span {
 }
 
 main{
-    background:  rgba(255, 204, 153, 0.8);   
+    background:  rgba(248, 138, 64, 0.5);   
 }
 
 #img_gastronomia{
@@ -220,7 +220,11 @@ img {
   height: 400px;
   padding: 1rem;
 }
-/* Media query para tablet en orientación horizontal */
+
+/* estuve probando con las medias siguientes para hacerlo responsive, pero aun tengo  que solucionar esa consigna y
+ el tema de las imagenes, revisar el img y el class .st. Tambien revisar el titulo_plato */
+
+/* tablet en orientación horizontal */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .st {
     /* Ajusta el tamaño del contenedor */
@@ -238,30 +242,29 @@ img {
   }
 }
 
-/* Media query para ordenador de escritorio */
+/* PC escritorio*/
 @media screen and (min-width: 1024px) {
   .st {
-    /* Ajusta el tamaño del contenedor */
+    
     width: 40%;
   }
   img {
-    /* Ajusta el tamaño de la imagen */
     width: 600px;
     height: auto;
   }
   .titulo_plato {
-    /* Ajusta el tamaño de fuente y espaciado */
     font-size: 2.1rem;
     padding: 1rem;
   }
+
 }
 @media screen and (max-width: 768px) {
   .stg {
     flex-direction: column;
   }
   .stg img {
-    width: 100%; /* Para asegurarse de que la imagen se ajuste al ancho del contenedor */
-    margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
+    width: 100%; 
+    margin-bottom: 1rem; 
   }
 }
 
@@ -269,6 +272,7 @@ img {
 
 
 
+ /* titulo para cada plato y postre, en vertica*/
 
 
 .titulo_plato{
