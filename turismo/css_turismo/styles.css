@@ -260,3 +260,14 @@ footer {
     color: white;
 }
 
+#flecha-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+#ico-arriba{
+    font-size: 2rem;
+    color:teal;
+}
