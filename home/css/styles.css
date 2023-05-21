@@ -339,9 +339,9 @@ main {
     cursor: pointer;
 }
 
-#ico-arriba{
+#ico-arriba {
     font-size: 2rem;
-    color:teal;
+    color: teal;
 }
 
 footer {
@@ -406,9 +406,10 @@ footer {
     }
 
     .menu a {
-        font-size: 0.7rem; 
-        margin-right: -1rem;
-        padding-right: 2.2rem;
+        font-size: 0.6rem;
+        margin-right: -0.4rem;
+        padding-right: 1.8rem;
+        flex-wrap:wrap;
     }
 
     /*video carrousel*/
@@ -423,9 +424,9 @@ footer {
     }
 
     .cultura_section {
-       flex-direction: column;
+        flex-direction: column;
     }
-    
+
     .title_cultura {
         font-size: 1rem;
         color: #191c32;
@@ -434,33 +435,33 @@ footer {
         padding-top: 2rem;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     #divider_cultura {
         height: 2px;
         width: 20px;
         margin-left: 1rem;
     }
-    
+
     .info_cultura {
         padding: 0.5rem 1rem;
         font-size: xx-small;
     }
-    
+
     .img_cultura {
         width: 100%;
         height: 20rem;
     }
-    
+
     .button_cultura {
         padding: 0.1rem 0.5rem;
         margin-left: 8.5rem;
         margin-bottom: 3rem;
-    }  
+    }
 
     .gastronomia_section {
         flex-direction: column;
     }
-    
+
     .title_gastronomia {
         font-size: 1rem;
         color: #191c32;
@@ -469,34 +470,34 @@ footer {
         padding-top: 2rem;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     #divider_gastronomia {
         height: 2px;
         width: 20px;
         margin-left: 1rem;
     }
-    
+
     .info_gastronomia {
         padding: 0.5rem 1rem;
         font-size: xx-small;
     }
-    
+
     .img_gastronomia {
         width: 100%;
         height: 20rem;
         padding-bottom: 1rem;
     }
-    
+
     .button_gastronomia {
         padding: 0.1rem 0.5rem;
         margin-left: 8.5rem;
         margin-bottom: 1.5rem;
     }
-    
+
     .turismo_section {
         flex-direction: column;
     }
-    
+
     .title_turismo {
         font-size: 1rem;
         color: #191c32;
@@ -505,24 +506,24 @@ footer {
         padding-top: 1rem;
         font-family: 'Roboto', sans-serif;
     }
-    
+
     #divider_turismo {
         height: 2px;
         width: 20px;
         margin-left: 1rem;
     }
-    
+
     .info_turismo {
         padding: 0.5rem 1rem;
         font-size: xx-small;
     }
-    
+
     .img_turismo {
         width: 100%;
         height: 20rem;
         padding-top: 1.5rem;
     }
-    
+
     .button_turismo {
         padding: 0.1rem 0.5rem;
         margin-left: 8.5rem;
@@ -532,23 +533,23 @@ footer {
     footer {
         flex-direction: column;
     }
-    
+
     #footer_info {
         display: flex;
         flex-direction: column;
         font-size: small;
     }
-    
+
     .info_foot {
         width: 100%;
         font-size: small;
     }
-    
+
     .links_foot {
         padding: 1rem;
         font-size: small;
     }
-    
+
     .fab {
         /*redes*/
         font-size: 1.5rem;
@@ -557,15 +558,212 @@ footer {
         padding-bottom: 1rem;
     }
 
-    .redes{
+    .redes {
         display: flex;
         justify-content: center;
     }
-    
+
     #copyright_section {
         text-align: center;
         color: white;
         font-size: small;
     }
 
+    #flecha-arriba {
+        right: 1.5rem;
+    }
+    
+    #ico-arriba {
+        font-size: 1.5rem;
+    }
+
 }
+
+@media screen and (max-width: 760px) and ( min-width: 361px){
+    .menu {
+      width: 100%;
+    }
+
+    #tituloJapon {
+        margin-left: 17.5rem;
+    }
+  
+    .titulo_carrusel {
+      font-size: 2rem;
+    }
+  
+    .subtitulo_carrusel {
+      font-size: 0.8rem;
+    }
+  
+    .video_japon {
+      padding-bottom: 2rem;
+    }
+  
+    #video_japon {
+      width: 90%;
+      height: 20rem;
+    }
+  
+    .links_foot {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+    /*video carrousel*/
+    .d-block {
+        height: 20rem;
+    }
+
+    .cultura_section {
+        height: 20rem;
+    }
+
+    .title_cultura {
+        font-size: 1rem;
+        color: #191c32;
+        padding: 1rem;
+        padding-bottom: 0rem;
+        padding-top: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #divider_cultura {
+        height: 2px;
+        width: 20px;
+        margin-left: 1rem;
+    }
+
+    .info_cultura {
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+
+    .img_cultura {
+        width: 60%;
+        height: 20rem;
+    }
+
+    .button_cultura {
+        padding: 0rem 0.5rem;
+        margin-left: 7rem;
+        margin-bottom: 1rem;
+    }
+
+    .gastronomia_section {
+        height: 20rem;
+    }
+
+    .title_gastronomia {
+        font-size: 1rem;
+        color: #191c32;
+        padding: 1rem;
+        padding-bottom: 0rem;
+        padding-top: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #divider_gastronomia {
+        height: 2px;
+        width: 20px;
+        margin-left: 1rem;
+    }
+
+    .info_gastronomia {
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+
+    .img_gastronomia {
+        width: 60%;
+        height: 20rem;
+    }
+
+    .button_gastronomia {
+        padding: 0rem 0.5rem;
+        margin-left: 7rem;
+        margin-bottom: 1rem;
+    }
+
+    .turismo_section {
+        height: 20rem;
+    }
+
+    .title_turismo {
+        font-size: 1rem;
+        color: #191c32;
+        padding: 1rem;
+        padding-bottom: 0rem;
+        padding-top: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #divider_turismo {
+        height: 2px;
+        width: 20px;
+        margin-left: 1rem;
+    }
+
+    .info_turismo {
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+
+    .img_turismo {
+        width: 60%;
+        height: 20rem;
+    }
+
+    .button_turismo {
+        padding: 0rem 0.5rem;
+        margin-left: 7rem;
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #footer_info {
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+    }
+
+    .info_foot {
+        width: 100%;
+        font-size: small;
+    }
+
+    .links_foot {
+        padding: 1rem;
+        font-size: small;
+    }
+
+    .fab {
+        /*redes*/
+        font-size: 1.5rem;
+        padding: 0.2rem;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    #copyright_section {
+        text-align: center;
+        color: white;
+        font-size: small;
+    }
+
+    #flecha-arriba {
+        right: 1.5rem;
+    }
+    
+    #ico-arriba {
+        font-size: 1.8rem;
+    }
+  }
