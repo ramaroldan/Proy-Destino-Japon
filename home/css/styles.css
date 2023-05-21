@@ -453,9 +453,10 @@ footer {
     }
 
     .button_cultura {
-        padding: 0.1rem 0.5rem;
-        margin-left: 8.5rem;
+        padding: 0.3rem 0.8rem;
+        margin-left: 9rem;
         margin-bottom: 3rem;
+        font-size: small;
     }
 
     .gastronomia_section {
@@ -485,13 +486,14 @@ footer {
     .img_gastronomia {
         width: 100%;
         height: 20rem;
-        padding-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .button_gastronomia {
-        padding: 0.1rem 0.5rem;
-        margin-left: 8.5rem;
+        padding: 0.3rem 0.8rem;
+        margin-left: 9rem;
         margin-bottom: 1.5rem;
+        font-size: small;
     }
 
     .turismo_section {
@@ -521,13 +523,14 @@ footer {
     .img_turismo {
         width: 100%;
         height: 20rem;
-        padding-top: 1.5rem;
+        padding-top: 2rem;
     }
 
     .button_turismo {
-        padding: 0.1rem 0.5rem;
-        margin-left: 8.5rem;
-        margin-bottom: 3rem;
+        padding: 0.3rem 0.8rem;
+        margin-left: 9rem;
+        margin-bottom: 3.5rem;
+        font-size: small;
     }
 
     footer {
