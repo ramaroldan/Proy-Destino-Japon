@@ -162,7 +162,7 @@ h2 {
 }
 
 #img-form{
-    width: 100%;
+    width: 90%;
     height: 40.3rem;
 }
 
@@ -170,6 +170,8 @@ h2 {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding: 0.5rem;
+    padding-right: 5rem;
 }
 
 .form-group {
@@ -210,6 +212,21 @@ h2 {
 .form-group .btn-submit:hover {
     background-color: darkcyan;
     box-shadow: none;
+}
+
+/*API*/
+#pikachu{
+  background-color: white;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+#button_saludo{
+    background-color:darkcyan;
+    border:0rem;
+    color:white;
 }
 
 /*FOOTER*/
@@ -258,3 +275,14 @@ footer {
     color: white;
 }
 
+#flecha-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+#ico-arriba{
+    font-size: 2rem;
+    color:teal;
+}
