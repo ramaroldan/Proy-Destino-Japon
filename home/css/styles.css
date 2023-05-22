@@ -590,7 +590,7 @@ footer {
 
 }
 
-@media screen and (max-width: 760px) and (min-width: 361px) {
+@media screen and (max-width: 760px) and (min-width: 400px) {
     .menu {
         width: 100%;
     }

@@ -29,6 +29,7 @@ header {
   font-family: 'Atma', cursive;
   color: white;
   margin-left: 1rem;
+  margin-top: 0.5rem;
   text-shadow: 1px 1px 2px black;
   /*sombra*/
 }
@@ -191,6 +192,23 @@ main {
   font-family: 'Noto Serif JP', serif;
   font-size: 0.8rem;
   text-align: center;
+  display: flex;
+  width: 100%;
+  background-color: #facece;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+
+.api h5{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/*
+.api {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.8rem;
+  text-align: center;
   display: inline-flex;
   flex-direction: column;
   width: 300px;
@@ -199,6 +217,7 @@ main {
   border-radius: 10%;
   margin: 5px;
 }
+*/
 
 /*FOOTER*/
 

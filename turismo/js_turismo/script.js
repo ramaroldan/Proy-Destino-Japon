@@ -85,7 +85,7 @@ function saludoAPI() {
             <p>¡Gracias por visitarnos!</p>
             <img src="${data.sprites.front_female}" width="200px">
             <img src="${data.sprites.front_default}" width="200px">
-            <p>¡Vuelve pronto!</p>
+            <p>¡Pika pronto!</p>
             `
         })
         .catch(error => console.log(error))

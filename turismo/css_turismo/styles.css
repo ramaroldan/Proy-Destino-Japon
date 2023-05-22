@@ -216,11 +216,16 @@ h2 {
 
 /*API*/
 #pikachu{
-  background-color: white;
   width: 100%;
-  display:flex;
-  justify-content: center;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+
+.pikachu_mensaje{
+    color:black;
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    font-size: 3.4rem;
+    background: linear-gradient(0deg, darkcyan 0%, white 100%);
 }
 
 #button_saludo{
@@ -286,3 +291,4 @@ footer {
     font-size: 2rem;
     color:teal;
 }
+

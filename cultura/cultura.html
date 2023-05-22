@@ -25,7 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-xKF4N0lW9GBIH+BLR+jzxFvjywsn+IYma3/WkIBv3nq8P56W6Tl7RUn8pMvxmz3R" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-xKF4N0lW9GBIH+BLR+jzxFvjywsn+IYma3/WkIBv3nq8P56W6Tl7RUn8pMvxmz3R" crossorigin="anonymous">
 
 
 </head>
@@ -46,32 +47,32 @@
                 <li><a href="../turismo/turismo.html#formulario">CONTACTO</a></li>
             </ul>
         </nav>
-       
+
     </header>
     <main>
         <!--SECCION DE LA IMAGEN GRANDE-->
-    
+
         <section class="fotoGrande">
             <img id="img_turismo" src="./imagenes cultura/c1.jpg" alt="Destino Japón">
         </section>
 
 
         <!--CONEXIÓN CON LA API DEL TIEMPO-->
-      
+
 
         <section id="app" class="api">
-            <h5>Estado del Clima en:{{weatherDescription}}</h5>
+            <h5>Estado del Clima en: {{weatherDescription}}</h5>
             <p>Fecha: {{time}}</p>
             <p><i class="fas fa-thermometer-half"></i> Temperatura Actual: {{currentWeather.temperature}} C°</p>
-            <p><i class="fas fa-wind"></i>  Velocidad del viento: {{currentWeather.windspeed}} Km/h</p>
-            <p><i class="fas fa-temperature-high"></i>  Temperatura Max: {{temperaturaMaxima}} C°</p>
-            <p><i class="fas fa-temperature-low"></i>   Temperatura Min: {{temperaturaMinima}} C°</p>
+            <p><i class="fas fa-wind"></i> Velocidad del viento: {{currentWeather.windspeed}} Km/h</p>
+            <p><i class="fas fa-temperature-high"></i> Temperatura Max: {{temperaturaMaxima}} C°</p>
+            <p><i class="fas fa-temperature-low"></i> Temperatura Min: {{temperaturaMinima}} C°</p>
 
         </section>
 
         <!--SECCION DE INTRUCIÓN A LA CULTURA JAPONESA-->
 
-       
+
         <section class="seccion_temas">
 
             <article class="presentacion_temas">
@@ -92,10 +93,10 @@
                     Japón
                 </p>
 
-            
-    
-         <!--SEGUNDO NAV PARA NAVEGAR POR LOS TEMAS DE CULTURA-->
-               
+
+
+                <!--SEGUNDO NAV PARA NAVEGAR POR LOS TEMAS DE CULTURA-->
+
 
 
                 <article class="presentacion_temas">
@@ -132,8 +133,8 @@
                 </article>
             </article>
 
-            <!--PRESENTACIÓN DE LOS TEMAS CULTURALES-->    
-            
+            <!--PRESENTACIÓN DE LOS TEMAS CULTURALES-->
+
 
             <article class="presentacion_temas">
                 <h3 id="ceremonia_del_te" class="titulos_secundarios">Ceremonia del té</h3>
@@ -149,12 +150,12 @@
                     La ceremonia del té se basa en los principios del respeto, la armonía, la pureza y la tranquilidad.
                     Se busca crear un ambiente de calma y apreciación, donde tanto el anfitrión como
 
-                    los invitados puedan disfrutar del momento presente y la interacción entre ellos. 
+                    los invitados puedan disfrutar del momento presente y la interacción entre ellos.
                     A través de la ceremonia del té, se busca transmitir una apreciación profunda por la naturaleza,
                     la estética y la interacción humana.
                 </p>
 
-                
+
 
                 <img src="./imagenes cultura/ceremonia del te 1.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/ceremonia del te 3.jpg" alt="" class="imagen">
@@ -162,14 +163,16 @@
                 <img src="./imagenes cultura/ceremoni a del te 5.jpg" alt="" class="imagen">
 
             </article>
+            <!--
             <article>
-                <p>Si tenes pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, reserva con nosotros un tour para aprender de los grandes
+                <p>Si tenes pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, reserva con
+                    nosotros un tour para aprender de los grandes
                     maestros del Té.
                 </p>
-            
-                <button id="botonReserva">RESEVAR</button> 
 
-            </article>
+                <button id="botonReserva">RESERVAR</button>
+
+            </article>-->
 
             <article class="presentacion_temas">
                 <h3 id="tanabata" class="titulos_secundarios">Tanabata</h3>
@@ -199,12 +202,13 @@
 
             </article>
 
-            <article>
-                <p>Si tenes pensado viajar a Japón en el mes del Tanabata, reserva con nosotros el tour por los mejores templos en Tokyo.
+            <!--<article>
+                <p>Si tenes pensado viajar a Japón en el mes del Tanabata, reserva con nosotros el tour por los mejores
+                    templos en Tokyo.
                 </p>
-            
-                <button id="botonReserva">RESEVAR</button> 
-            </article>
+
+                <button id="botonReserva">RESERVAR</button>
+            </article>-->
 
 
             <article class="presentacion_temas">
@@ -212,7 +216,7 @@
                 <p>
                     La palabra “hanami” (花見) significa “mirar las flores”.
                     Ohanami es una tradición japonesa muy popular que significa "contemplar las flores" y se refiere
-                    específicamente a la observación de los cerezos en flor,conocidos como sakura. 
+                    específicamente a la observación de los cerezos en flor,conocidos como sakura.
                     Durante el ohanami, las personas se reúnen en parques, jardines o a lo largo de los ríos para
                     disfrutar de la belleza de los cerezos en flor. Es una ocasión social en la que amigos,
                     familiares y colegas se juntan para disfrutar de un picnic bajo los árboles de sakura.
@@ -237,12 +241,13 @@
                 <p>Japón es famoso por sus festivales tradicionales, conocidos como "matsuri". La palabra ‘matsuri’
                     quiere decir ‘festival’ o ‘fiesta’ en japonés.
                     Consiste en una de las celebraciones más importantes de Japón, vinculados estrechamente con los
-                    templos budistas o los santuarios sintoístas, alrededor de los cuáles tienen lugar la mayor parte de las celebraciones.
+                    templos budistas o los santuarios sintoístas, alrededor de los cuáles tienen lugar la mayor parte de
+                    las celebraciones.
                     Los festivales de Japón rinden homenaje a los dioses y a los ancestros, dándoles las gracias cada
                     año en una fecha señalada.
 
 
-           
+
 
                     El festival de Gion en Kioto y el festival de Nebuta en Aomori son dos ejemplos destacados.
                     Los matsuri a menudo incluyen desfiles coloridos en los que se exhiben carrozas ornamentadas
@@ -265,13 +270,14 @@
                 <img src="./imagenes cultura/matsuri 6.jpg" alt="" class="imagen">
 
             </article>
-            <article>
-                <p>Si tenés pensado viajar a Japón en los meses de verano reserva con nosotros nuestro tour especial, donde recorremos las mejores ciudades donde se celebran 
+            <!--<article>
+                <p>Si tenés pensado viajar a Japón en los meses de verano reserva con nosotros nuestro tour especial,
+                    donde recorremos las mejores ciudades donde se celebran
                     estos eventos.
                 </p>
-            
-                <button id="botonReserva">RESEVAR</button> 
-            </article>
+
+                <button id="botonReserva">RESERVAR</button>
+            </article>-->
 
 
 
@@ -285,8 +291,8 @@
                     kimono se usa tanto por hombres como por mujeres,
                     aunque los estilos, colores y patrones pueden variar según el género y la ocasión.
 
-                    El kimono está hecho de telas de seda u otros materiales de alta calidad. 
-    
+                    El kimono está hecho de telas de seda u otros materiales de alta calidad.
+
                     Los turistas pueden tener la oportunidad de alquilar y usar kimonos mientras visitan Japón.
 
                     Complementando el kimono, se utilizan diversos accesorios como el obi (cinturón ancho), el obijime
@@ -299,8 +305,8 @@
                     meses de verano y en festivales de fuegos artificiales o en baños termales.
                     El yukata tiene una estructura similar al kimono, pero es más simple y ligero. Está hecho de algodón
 
-                    u otros materiales livianos y transpirables. 
-            
+                    u otros materiales livianos y transpirables.
+
                     El yukata suele tener colores brillantes y patrones alegres, con motivos tradicionales como flores,
                     olas, abanicos, o paisajes estacionales como flores de cerezo.
 
@@ -319,16 +325,17 @@
 
 
             </article>
-            <article>
-                <p>Si tenés pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, reserva con nosotros nuestro tour por Kyoto, donde además de recorrer la 
+            <!--<article>
+                <p>Si tenés pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, reserva con
+                    nosotros nuestro tour por Kyoto, donde además de recorrer la
                     hermosa ciudad, te llevaremos al mejor lugar donde se puede alquilar esta vestimenta tradicional.
                     maestros del Té.
                 </p>
-            
-                <button id="botonReserva">RESEVAR</button> 
-            </article>
 
-            
+                <button id="botonReserva">RESERVAR</button>
+            </article>-->
+
+
 
 
             <article class="presentacion_temas">
@@ -350,7 +357,7 @@
 
                 </p>
 
-                
+
                 <img src="./imagenes cultura/kabuki 2.jpg" alt="" class="imagen">
 
                 <img src="./imagenes cultura/kabuki 4.jpg" alt="" class="imagen">
@@ -359,13 +366,14 @@
 
 
             </article>
-            <article>
-                <p>Si tenés pensado viajar a Japón en los próximos meses y querés asistir a una de estas obras podes reservar a través de nuestra página, en donde te
+            <!--<article>
+                <p>Si tenés pensado viajar a Japón en los próximos meses y querés asistir a una de estas obras podes
+                    reservar a través de nuestra página, en donde te
                     informaremos los nombres de las obras, días, horios y precio. No te lo pierdas!
                 </p>
-            
-                <button id="botonReserva">RESEVAR</button> 
-            </article>
+
+                <button id="botonReserva">RESERVAR</button>
+            </article>-->
 
 
             <article class="presentacion_temas">
@@ -386,26 +394,23 @@
                     como una expresión única de la estética y la sensibilidad japonesa.
                 </p>
 
-
-                
-
-                <img src="./imagenes cultura/sumi e 1.webp" alt="" class="imagen">
-
-                
-
-                
+                <img src="./imagenes cultura/sumi e 2.jpg" alt="" class="imagen">
+                <img src="./imagenes cultura/sumi e 3.jpg" alt="" class="imagen">
+                <img src="./imagenes cultura/sumi e 4.jpg" alt="" class="imagen">
+                <img src="./imagenes cultura/sumi e 5.jpg" alt="" class="imagen">
 
             </article>
-            <article>
-                <p>Si tenés pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, reserva con nosotros para tomar clases de Sumi-e con los
+            <!--<article>
+                <p>Si tenés pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, reserva con
+                    nosotros para tomar clases de Sumi-e con los
                     mejores maestros japoneses.
                 </p>
-            
-                <button id="botonReserva">RESEVAR</button> 
 
-              
+                <button id="botonReserva">RESERVAR</button>
 
-            </article>
+
+
+            </article>-->
 
 
             <article class="presentacion_temas">
@@ -426,23 +431,24 @@
                 </p>
 
 
-               
+
                 <img src="./imagenes cultura/ikebana 2.JPG" alt="" class="imagen">
                 <img src="./imagenes cultura/ikebana 3.webp" alt="" class="imagen">
 
-                
+
                 <img src="./imagenes cultura/ikebana 5.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/ikebana 6.jpg" alt="" class="imagen">
 
             </article>
 
-            <article>
-                <p>Si tenés pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, disponemos de clases de Ikebana para que puedas realizar
+            <!--<article>
+                <p>Si tenés pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, disponemos
+                    de clases de Ikebana para que puedas realizar
                     en tu estadía por Japón, reserva con nosotros!
                 </p>
-            
-                <button id="botonReserva">RESEVAR</button> 
-            </article>
+
+                <button id="botonReserva">RESERVAR</button>
+            </article>-->
 
 
         </section>
@@ -455,10 +461,10 @@
         </section>
 
 
-       <!--SECCIÓN DE  SCRIPTS-->
+        <!--SECCIÓN DE  SCRIPTS-->
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="../cultura/api/script.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="../cultura/api/script.js"></script>
 
 
     </main>
