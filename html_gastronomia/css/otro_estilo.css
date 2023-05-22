@@ -1,281 +1,269 @@
-
-
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Aplicar fondo con img
-    background-image: url(../img/t7.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    */
-    /*border: 2px solid black;*/
-}
+  }
 
-header {
+  header {
     background-color: rgba(0, 0, 0, 0.8);
     position: sticky;
     top: 0;
     z-index: 1;
-}
+  }
 
-.navbar {
+  .navbar {
     display: flex;
     justify-content: space-between;
-}
-
-
-p {
-  font-weight: bold;
-  font-size: 1.3rem;
-  letter-spacing: 0.15rem;
-}
-
-#copyright_section p {
-  font-weight: normal;
-  font-size: 1rem;
-  letter-spacing: normal;
-}
+  }
 
 
 
 
+  #copyright_section p {
+    font-weight: normal;
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
 
-#tituloJapon {
+  #tituloJapon {
     font-family: 'Atma', cursive;
     color: white;
     margin-left: 1rem;
     text-shadow: 1px 1px 2px black;
     /*sombra*/
-}
+  }
 
-span {
+  span {
     color: red;
-}
+  }
 
-#logoIMG {
+  #logoIMG {
     width: 1.8rem;
     padding: 0;
     margin-bottom: 0.5rem;
-}
+  }
 
-.menu {
+  .menu {
     display: flex;
     width: 50%;
     justify-content: space-around;
     padding-top: 1rem;
-}
+  }
 
-/*lista menú*/
-.menu li {
+  /*lista menú*/
+  .menu li {
     list-style: none;
-}
+  }
 
-/*palabras menú*/
-.menu a {
+  /*palabras menú*/
+  .menu a {
     color: white;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-}
+  }
 
-.menu li:hover a {
+  .menu li:hover a {
     background-color: white;
     color: rgb(48, 47, 47);
     transition: ease-in .4s;
     border-radius: 2rem;
     padding: 0.8rem;
-}
+  }
 
-main{
-    background:  rgba(248, 138, 64, 0.5);   
-}
+  main {
+    background: rgba(248, 138, 64, 0.5);
+    padding-bottom: 1rem;
+  }
 
-#img_gastronomia{
+  #img_gastronomia {
     display: flex;
     width: 100%;
     height: 41rem;
-}
+    padding: 0rem;
+  }
 
- 
-#gastronomiaJapon {
+
+  #gastronomiaJapon {
     font-family: 'Concert One', cursive;
     font-size: 4.5rem;
     text-align: center;
     padding-top: 1.5rem;
-    color:darkcyan;
+    color: darkcyan;
     text-shadow: 1px 1px 2px black;
-}
+  }
 
-h2{
+  h2 {
     font-family: 'Noto Serif JP', serif;
     text-align: center;
     font-size: xxx-large;
     color: rgb(19, 2, 19);
     margin: 2rem 5rem;
     padding-bottom: 0rem;
-    background:  rgba(241, 181, 157, 0.998) 
-}
+  }
 
-#Platos_típicos h3 {
-    
+  #Platos_típicos h3 {
+
     font-family: 'Concert One', cursive;
     font-size: 4rem;
     text-align: center;
     padding-top: 1.5rem;
-    color:darkcyan;
+    color: darkcyan;
     text-shadow: 1px 1px 2px black;
-}
+  }
 
-.plato{
-  display: flex;
-  
-}
+  .plato {
+    display: flex;
 
-#Postres h3 {
+  }
+
+  #Postres h3 {
     font-family: 'Concert One', cursive;
     font-size: 4rem;
     text-align: center;
     padding-top: 1.5rem;
-    color:darkcyan;
+    color: darkcyan;
     text-shadow: 1px 1px 2px black;
-}
+  }
 
-.subir{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px;
-  background-color: #f00;
-  color: #fff;
-  text-decoration: none;
-}
-
-
+  .subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #f00;
+    color: #fff;
+    text-decoration: none;
+  }
 
 
-/*FOOTER*/
-footer {
+
+
+  /*FOOTER*/
+  footer {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 1rem;
-}
+  }
 
-#footer_info {
+  #footer_info {
     display: flex;
     justify-content: space-evenly;
-}
+  }
 
-.info_foot {
+  .info_foot {
     width: 35rem;
     display: inline-flex;
     justify-content: space-evenly;
-}
+  }
 
-.links_foot {
+  .links_foot {
     color: white;
     text-decoration: none;
     padding: 1rem;
-}
+  }
 
-.links_foot:hover {
+  .links_foot:hover {
     color: white;
     font-size: 1rem;
-}
+  }
 
 
 
-.fab {
+  .fab {
     /*redes*/
     color: rgb(206, 206, 206);
     font-size: 2rem;
     padding: 1rem;
-}
+  }
 
-.fab:hover {
+  .fab:hover {
     /*redes al colocarse*/
     color: white;
     font-size: 2.2rem;
-}
+  }
 
-#copyright_section {
+  #copyright_section {
     text-align: center;
     color: white;
-}
+  }
 
-li{
+  li {
     text-decoration: none;
     list-style: none;
-}
-
-.st{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  padding: 1.1rem;
-}
-
-img {
-  width: 600px;
-  height: 400px;
-  padding: 1rem;
-}
-
-/* estuve probando con las medias siguientes para hacerlo responsive, pero aun tengo  que solucionar esa consigna y
- el tema de las imagenes, revisar el img y el class .st. Tambien revisar el titulo_plato */
-
-/* tablet en orientación horizontal */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .st {
-    /* Ajusta el tamaño del contenedor */
-    width: 60%;
   }
-  img {
-    /* Ajusta el tamaño de la imagen */
-    width: 400px;
-    height: auto;
-  }
-  .titulo_plato {
-    /* Ajusta el tamaño de fuente y espaciado */
-    font-size: 1.8rem;
-    padding: 0.5rem;
-  }
-}
 
-/* PC escritorio*/
-@media screen and (min-width: 1024px) {
-  .st {
-    
+  .st{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
     width: 40%;
+    min-width: 3rem;
+    padding: 1.1rem;
+    font-size: 1.5rem;
+    margin: 1rem 10rem 3rem 5rem;
+    font-family: 'Noto Serif JP', serif;
+    text-align: justify;
   }
+  
   img {
-    width: 600px;
-    height: auto;
-  }
-  .titulo_plato {
-    font-size: 2.1rem;
+    width: 40%;
+    height: 20%;
+    min-width: 10rem;
     padding: 1rem;
   }
-
-}
-@media screen and (max-width: 768px) {
-  .stg {
-    flex-direction: column;
+  
+  /* estuve probando con las medias siguientes para hacerlo responsive, pero aun tengo  que solucionar esa consigna y
+   el tema de las imagenes, revisar el img y el class .st. Tambien revisar el titulo_plato */
+  
+  /* tablet en orientación horizontal */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .st {
+      /* Ajusta el tamaño del contenedor */
+      width: 60%;
+    }
+    img {
+      /* Ajusta el tamaño de la imagen */
+      width: 40%;
+      height: auto;
+    }
+    .titulo_plato {
+      /* Ajusta el tamaño de fuente y espaciado */
+      font-size: 1.8rem;
+      padding: 0.5rem;
+    }
   }
-  .stg img {
-    width: 100%; 
-    margin-bottom: 1rem; 
+  
+  /* PC escritorio*/
+  @media screen and (min-width: 1024px) {
+    .st {
+      
+      width: 40%;
+    }
+    img {
+      width: 40%;
+      height: auto;
+    }
+    .titulo_plato {
+      font-size: 2.1rem;
+      padding: 1rem;
+    }
+  
   }
-}
+  @media screen and (max-width: 768px) {
+    .stg {
+      flex-direction: column;
+    }
+    .stg img {
+      width: 100%; 
+      margin-bottom: 1rem; 
+    }
+  }
+  
+  
+  /* titulo para cada plato y postre, en vertica*/
 
 
-
-
-
- /* titulo para cada plato y postre, en vertica*/
-
-
-.titulo_plato{
+ .titulo_plato {
   font-family: 'Concert One', cursive;
   font-size: 2.1rem;
   padding: 1rem;
@@ -283,9 +271,34 @@ img {
   text-orientation: upright;
   text-align: center;
   letter-spacing: 0.5rem;
-  color:darkcyan;
+  color: darkcyan;
   text-shadow: 1px 1px 2px black;
-  
+}
 
+@media (max-width: 768px) {
+  .titulo_plato {
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+    letter-spacing: 0;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+  }
+}
 
+@media (max-width: 480px) {
+  .titulo_plato {
+    font-size: 1.5rem;
+  }
+}
+
+  #flecha-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+#ico-arriba{
+    font-size: 2rem;
+    color:teal;
 }
