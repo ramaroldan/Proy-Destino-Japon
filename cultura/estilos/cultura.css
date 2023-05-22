@@ -82,7 +82,7 @@ span {
   background: #d9a7c7;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  border-radius: 10%;
 }
 .icono_li_nav {
   list-style-image: url('../imagen cultura/ florCerezo.png');
@@ -131,7 +131,7 @@ main {
   text-align: center;
   font-size: 4.1rem;
   color: #333;
-  margin: 3rem 5rem;
+  margin: 1rem 5rem;
   padding-bottom: 0rem;
   text-shadow: 1px 1px 2px black;
 }
@@ -167,21 +167,36 @@ main {
     -webkit-box-shadow:  15px 15px #fdcbea;
     } 
 
+    /*BOTON DE RESERVA*/
+
   #botonReserva {
     display: block;
     margin: 0 auto;
-    background-color: #f5a1a1;
+    background-color:#f0afd5;
     color: black;
     font-weight: bold;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8%;
+   
     cursor: pointer;
     margin-top: 20px; 
     text-align: center; 
     width: fit-content; /* Ajusta el ancho del botón al contenido */
     }
-    
+
+.api {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 0.8rem;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #facece;
+  padding: 5px;
+  border-radius: 10%;
+  margin: 5px;
+}
 
 /*FOOTER*/
 

@@ -25,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-xKF4N0lW9GBIH+BLR+jzxFvjywsn+IYma3/WkIBv3nq8P56W6Tl7RUn8pMvxmz3R" crossorigin="anonymous">
+
 
 </head>
 
@@ -44,11 +46,32 @@
                 <li><a href="../turismo/turismo.html#formulario">CONTACTO</a></li>
             </ul>
         </nav>
+       
     </header>
     <main>
+        <!--SECCION DE LA IMAGEN GRANDE-->
+    
         <section class="fotoGrande">
             <img id="img_turismo" src="./imagenes cultura/c1.jpg" alt="Destino Japón">
         </section>
+
+
+        <!--CONEXIÓN CON LA API DEL TIEMPO-->
+      
+
+        <section id="app" class="api">
+            <h5>Estado del Clima en:{{weatherDescription}}</h5>
+            <p>Fecha: {{time}}</p>
+            <p><i class="fas fa-thermometer-half"></i> Temperatura Actual: {{currentWeather.temperature}} C°</p>
+            <p><i class="fas fa-wind"></i>  Velocidad del viento: {{currentWeather.windspeed}} Km/h</p>
+            <p><i class="fas fa-temperature-high"></i>  Temperatura Max: {{temperaturaMaxima}} C°</p>
+            <p><i class="fas fa-temperature-low"></i>   Temperatura Min: {{temperaturaMinima}} C°</p>
+
+        </section>
+
+        <!--SECCION DE INTRUCIÓN A LA CULTURA JAPONESA-->
+
+       
         <section class="seccion_temas">
 
             <article class="presentacion_temas">
@@ -68,6 +91,10 @@
                     Aquí te mostramos algunos aspectos clave de la cultura japonesa que puedes realizar en tu viaje a
                     Japón
                 </p>
+            
+    
+         <!--SEGUNDO NAV PARA NAVEGAR POR LOS TEMAS DE CULTURA-->
+               
 
                 <article class="presentacion_temas">
                     <nav>
@@ -102,7 +129,8 @@
                     </nav>
                 </article>
             </article>
-
+            <!--PRESENTACIÓN DE LOS TEMAS CULTURALES-->    
+            
             <article class="presentacion_temas">
                 <h3 id="ceremonia_del_te" class="titulos_secundarios">Ceremonia del té</h3>
                 <p>
@@ -382,20 +410,21 @@
 
 
         </section>
-        <!--<article>
-            <ul class="contenido-nav">
-                <li>
-                    <a href="#inicio" title="inicio">Volver al comienzo</a>
-                </li>
-            </ul>
-        </article>-->
+
+        <!--BOTON PARA  SUBIR POR LA PÁGINA-->
         <section class="subir_pagina">
             <a href="#img_turismo" id="flecha-arriba"><i class="fa-solid fa-circle-arrow-up fa-bounce"
                     id="ico-arriba"></i></a>
         </section>
 
+       <!--SECCIÓN DE  SCRIPTS-->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../cultura/api/script.js"></script>
+
     </main>
 
+    <!--SECCION FOOTER-->
     <footer>
         <section id="footer_info">
             <section>
