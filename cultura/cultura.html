@@ -25,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-xKF4N0lW9GBIH+BLR+jzxFvjywsn+IYma3/WkIBv3nq8P56W6Tl7RUn8pMvxmz3R" crossorigin="anonymous">
+
 
 </head>
 
@@ -44,11 +46,32 @@
                 <li><a href="../turismo/turismo.html#formulario">CONTACTO</a></li>
             </ul>
         </nav>
+       
     </header>
     <main>
+        <!--SECCION DE LA IMAGEN GRANDE-->
+    
         <section class="fotoGrande">
             <img id="img_turismo" src="./imagenes cultura/c1.jpg" alt="Destino Japón">
         </section>
+
+
+        <!--CONEXIÓN CON LA API DEL TIEMPO-->
+      
+
+        <section id="app" class="api">
+            <h5>Estado del Clima en:{{weatherDescription}}</h5>
+            <p>Fecha: {{time}}</p>
+            <p><i class="fas fa-thermometer-half"></i> Temperatura Actual: {{currentWeather.temperature}} C°</p>
+            <p><i class="fas fa-wind"></i>  Velocidad del viento: {{currentWeather.windspeed}} Km/h</p>
+            <p><i class="fas fa-temperature-high"></i>  Temperatura Max: {{temperaturaMaxima}} C°</p>
+            <p><i class="fas fa-temperature-low"></i>   Temperatura Min: {{temperaturaMinima}} C°</p>
+
+        </section>
+
+        <!--SECCION DE INTRUCIÓN A LA CULTURA JAPONESA-->
+
+       
         <section class="seccion_temas">
 
             <article class="presentacion_temas">
@@ -68,6 +91,12 @@
                     Aquí te mostramos algunos aspectos clave de la cultura japonesa que puedes realizar en tu viaje a
                     Japón
                 </p>
+
+            
+    
+         <!--SEGUNDO NAV PARA NAVEGAR POR LOS TEMAS DE CULTURA-->
+               
+
 
                 <article class="presentacion_temas">
                     <nav>
@@ -103,6 +132,9 @@
                 </article>
             </article>
 
+            <!--PRESENTACIÓN DE LOS TEMAS CULTURALES-->    
+            
+
             <article class="presentacion_temas">
                 <h3 id="ceremonia_del_te" class="titulos_secundarios">Ceremonia del té</h3>
                 <p>
@@ -116,20 +148,26 @@
                     desde la limpieza de los utensilios hasta la preparación y presentación del té.
                     La ceremonia del té se basa en los principios del respeto, la armonía, la pureza y la tranquilidad.
                     Se busca crear un ambiente de calma y apreciación, donde tanto el anfitrión como
-                    los invitados puedan disfrutar del momento presente y la interacción entre ellos. Cada gesto y
-                    movimiento tiene un significado simbólico y se realiza con atención y cuidado.
-                    La ceremonia del té es una experiencia íntima y significativa que va más allá de simplemente beber
-                    té. Es un encuentro entre personas, una forma de conectar con la belleza de
-                    la simplicidad y una oportunidad para cultivar la calma y la tranquilidad interior. A través de la
-                    ceremonia del té, se busca transmitir una apreciación profunda por la naturaleza,
+
+                    los invitados puedan disfrutar del momento presente y la interacción entre ellos. 
+                    A través de la ceremonia del té, se busca transmitir una apreciación profunda por la naturaleza,
                     la estética y la interacción humana.
                 </p>
+
+                
+
                 <img src="./imagenes cultura/ceremonia del te 1.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/ceremonia del te 3.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/ceremonia del te 2.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/ceremonia del te 4.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/ceremoni a del te 5.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/ceremonia del te 6.jpg" alt="" class="imagen">
+
+            </article>
+            <article>
+                <p>Si tenes pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, reserva con nosotros un tour para aprender de los grandes
+                    maestros del Té.
+                </p>
+            
+                <button id="botonReserva">RESEVAR</button> 
 
             </article>
 
@@ -150,29 +188,31 @@
                     papel, conocidos como "tanzaku". Los tanzaku son tiras de papel
                     en las que la gente escribe sus deseos y esperanzas. Estos deseos se cuelgan en las ramas de los
                     árboles de bambú, creando un hermoso paisaje.
-                    El Tanabata es una celebración alegre y colorida en la que se desea la realización de deseos y se
-                    celebra el amor y la reunión de los amantes celestiales. Aunque las
-                    formas de celebración pueden variar según la región, el espíritu festivo y la belleza de los adornos
-                    hacen del Tanabata una festividad especial en la cultura japonesa.
+
                 </p>
 
                 <img src="./imagenes cultura/tanabata 1.jpeg" alt="" class="imagen">
-                <img src="./imagenes cultura/tanabata 2.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/tanabata 3.webp" alt="" class="imagen">
+
                 <img src="./imagenes cultura/tanabata 4.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/tanabata 5 .jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/tanabata 6.jpg" alt="" class="imagen">
 
             </article>
 
+            <article>
+                <p>Si tenes pensado viajar a Japón en el mes del Tanabata, reserva con nosotros el tour por los mejores templos en Tokyo.
+                </p>
+            
+                <button id="botonReserva">RESEVAR</button> 
+            </article>
+
+
             <article class="presentacion_temas">
                 <h3 id="ohanami" class="titulos_secundarios">Ohanami</h3>
                 <p>
                     La palabra “hanami” (花見) significa “mirar las flores”.
                     Ohanami es una tradición japonesa muy popular que significa "contemplar las flores" y se refiere
-                    específicamente a la observación de los cerezos en flor,
-                    conocidos como sakura. Esta actividad se realiza durante la temporada del sakura, que generalmente
-                    ocurre en primavera.
+                    específicamente a la observación de los cerezos en flor,conocidos como sakura. 
                     Durante el ohanami, las personas se reúnen en parques, jardines o a lo largo de los ríos para
                     disfrutar de la belleza de los cerezos en flor. Es una ocasión social en la que amigos,
                     familiares y colegas se juntan para disfrutar de un picnic bajo los árboles de sakura.
@@ -182,18 +222,12 @@
                     Durante el ohanami, es común ver a las personas vestidas con kimonos tradicionales, especialmente
                     las mujeres, y disfrutar de comidas y bebidas al aire libre, como bentos (cajas de comida)
                     preparados en casa o comprados en tiendas de conveniencia.
-                    El ohanami es un evento muy esperado en Japón y es considerado una experiencia especial y
-                    significativa. Es una oportunidad para apreciar la belleza de la naturaleza, relajarse y disfrutar
-                    de la compañía de seres queridos mientras se maravillan con la efímera y hermosa floración de los
-                    cerezos.
                 </p>
 
                 <img src="./imagenes cultura/ohanami 1.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/ohanami 2.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/ohanami 3.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/ohanami 4.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/ohanami 5.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/ohanami 6.jpg" alt="" class="imagen">
 
 
             </article>
@@ -201,14 +235,15 @@
             <article class="presentacion_temas">
                 <h3 id="matsuri" class="titulos_secundarios">Matsuri</h3>
                 <p>Japón es famoso por sus festivales tradicionales, conocidos como "matsuri". La palabra ‘matsuri’
-                    quiere decir en su definición ‘festival’ o ‘fiesta’ en japonés.
+                    quiere decir ‘festival’ o ‘fiesta’ en japonés.
                     Consiste en una de las celebraciones más importantes de Japón, vinculados estrechamente con los
-                    templos budistas o los santuarios sintoístas, alrededor
-                    de los cuáles tienen lugar la mayor parte de las celebraciones.
+                    templos budistas o los santuarios sintoístas, alrededor de los cuáles tienen lugar la mayor parte de las celebraciones.
                     Los festivales de Japón rinden homenaje a los dioses y a los ancestros, dándoles las gracias cada
                     año en una fecha señalada.
-                    Estos eventos se celebran en todo el país y a menudo están asociados con los santuarios locales.
-                    Los festivales suelen incluir desfiles, música, danzas tradicionales y fuegos artificiales.
+
+
+           
+
                     El festival de Gion en Kioto y el festival de Nebuta en Aomori son dos ejemplos destacados.
                     Los matsuri a menudo incluyen desfiles coloridos en los que se exhiben carrozas ornamentadas
                     llamadas "mikoshi". Estas carrozas, decoradas con figuras y adornos elaborados,
@@ -218,20 +253,27 @@
                     para honrar a los antepasados, y el "Awa Odori",
                     una animada danza folclórica que se lleva a cabo durante el festival de Obon.
                     Muchos matsuri culminan con espectáculos de fuegos artificiales que iluminan el cielo nocturno.
-                    Estos fuegos artificiales son un espectáculo impresionante y a
-                    menudo atraen a una gran multitud de espectadores.
+
                     Durante los matsuri, es común que las personas vistan yukatas, que son kimonos de verano más ligeros
                     y casuales
                 </p>
 
                 <img src="./imagenes cultura/matsuri 1.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/matsuri 2.jpeg" alt="" class="imagen">
-                <img src="./imagenes cultura/matsuri 3.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/matsuri 4.jpg" alt="" class="imagen">
+
                 <img src="./imagenes cultura/matsuri 5.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/matsuri 6.jpg" alt="" class="imagen">
 
             </article>
+            <article>
+                <p>Si tenés pensado viajar a Japón en los meses de verano reserva con nosotros nuestro tour especial, donde recorremos las mejores ciudades donde se celebran 
+                    estos eventos.
+                </p>
+            
+                <button id="botonReserva">RESEVAR</button> 
+            </article>
+
+
 
             <article class="presentacion_temas">
                 <h3 id="vestimenta_tradicional" class="titulos_secundarios">Vestimenta tradicional</h3>
@@ -242,20 +284,11 @@
                     Es un vestido de estilo rectangular con mangas anchas y se ata con un cinturón llamado "obi". El
                     kimono se usa tanto por hombres como por mujeres,
                     aunque los estilos, colores y patrones pueden variar según el género y la ocasión.
-                    El kimono está hecho de telas de seda u otros materiales de alta calidad. Tradicionalmente, se
-                    confecciona a partir de piezas rectangulares de tela que se unen y se pliegan
-                    para crear la forma del kimono.
-                    Las mangas son anchas y los paneles delanteros se superponen, generalmente cerrados con una banda
-                    ancha llamada "obi".
-                    Hay diferentes tipos de kimono que varían según la ocasión, la estación del año y la persona que lo
-                    use. Algunos ejemplos comunes incluyen el "furisode", un kimono de mangas
-                    largas usado por mujeres jóvenes en ceremonias y celebraciones formales,
-                    el "tomesode", un kimono formal para mujeres casadas, y el "yukata", un kimono informal de verano
-                    utilizado en festivales y balnearios.
-                    Aunque el kimono es una prenda tradicional, su uso se ha vuelto menos frecuente en la vida cotidiana
-                    japonesa. Sin embargo, aún se puede ver en ocasiones especiales como bodas,
-                    ceremonias de graduación, festivales y otras celebraciones culturales.
-                    Además, los turistas pueden tener la oportunidad de alquilar y usar kimonos mientras visitan Japón.
+
+                    El kimono está hecho de telas de seda u otros materiales de alta calidad. 
+    
+                    Los turistas pueden tener la oportunidad de alquilar y usar kimonos mientras visitan Japón.
+
                     Complementando el kimono, se utilizan diversos accesorios como el obi (cinturón ancho), el obijime
                     (cordón para atar el obi), los zori o geta (sandalias japonesas), y una
                     variedad de adornos para el cabello.
@@ -265,12 +298,12 @@
                     El yukata es un tipo de kimono informal y ligero que se utiliza comúnmente en Japón durante los
                     meses de verano y en festivales de fuegos artificiales o en baños termales.
                     El yukata tiene una estructura similar al kimono, pero es más simple y ligero. Está hecho de algodón
-                    u otros materiales livianos y transpirables. A diferencia del kimono,
-                    el yukata se puede poner y ajustar más fácilmente, ya que no requiere de múltiples capas de
-                    vestimenta.
+
+                    u otros materiales livianos y transpirables. 
+            
                     El yukata suele tener colores brillantes y patrones alegres, con motivos tradicionales como flores,
                     olas, abanicos, o paisajes estacionales como flores de cerezo.
-                    El diseño del yukata puede variar según la región y la ocasión.
+
                     El obi que se usa con el yukata es más estrecho y más fácil de atar en comparación con el obi
                     utilizado con kimonos formales.
                     Para completar el conjunto, se suelen usar accesorios como geta (sandalias tradicionales de madera),
@@ -278,14 +311,25 @@
                 </p>
 
                 <img src="./imagenes cultura/kimono 1.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/kimono 2.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/yukata 1.webp" alt="" class="imagen">
+
                 <img src="./imagenes cultura/yukata 2.webp" alt="" class="imagen">
                 <img src="./imagenes cultura/yukata 3.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/yukata 4.jpg" alt="" class="imagen">
 
 
+
             </article>
+            <article>
+                <p>Si tenés pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, reserva con nosotros nuestro tour por Kyoto, donde además de recorrer la 
+                    hermosa ciudad, te llevaremos al mejor lugar donde se puede alquilar esta vestimenta tradicional.
+                    maestros del Té.
+                </p>
+            
+                <button id="botonReserva">RESEVAR</button> 
+            </article>
+
+            
+
 
             <article class="presentacion_temas">
                 <h3 id="teatro_kabuki" class="titulos_secundarios">Teatro Kabuki</h3>
@@ -304,20 +348,25 @@
                     Kabuki-za en Tokio. Además, se realizan giras nacionales e internacionales para llevar esta forma de
                     arte a diferentes audiencias.
 
-                    El teatro Kabuki es una expresión artística única y cautivadora que combina actuación, música,
-                    danza, vestuario y escenografía. Su rica tradición y técnica distintiva lo
-                    convierten en una forma de teatro altamente apreciada tanto en Japón como en todo el mundo.
                 </p>
 
-                <img src="./imagenes cultura/kabuki 1.jpg" alt="" class="imagen">
+                
                 <img src="./imagenes cultura/kabuki 2.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/kabuki 3.jpg" alt="" class="imagen">
+
                 <img src="./imagenes cultura/kabuki 4.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/kabuki 5.jpg" alt="" class="imagen">
                 <img src=".//imagenes cultura/kabuki 6.jpg" alt="" class="imagen">
 
 
             </article>
+            <article>
+                <p>Si tenés pensado viajar a Japón en los próximos meses y querés asistir a una de estas obras podes reservar a través de nuestra página, en donde te
+                    informaremos los nombres de las obras, días, horios y precio. No te lo pierdas!
+                </p>
+            
+                <button id="botonReserva">RESEVAR</button> 
+            </article>
+
 
             <article class="presentacion_temas">
                 <h3 id="sumi-e" class="titulos_secundarios">SUMI-E</h3>
@@ -337,14 +386,27 @@
                     como una expresión única de la estética y la sensibilidad japonesa.
                 </p>
 
+
+                
+
                 <img src="./imagenes cultura/sumi e 1.webp" alt="" class="imagen">
-                <img src="./imagenes cultura/sumi e 2.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/sumi e 3.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/sumie 4.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/sumie 5.jpg" alt="" class="imagen">
-                <img src="./imagenes cultura/sumie 6.jpg" alt="" class="imagen">
+
+                
+
+                
 
             </article>
+            <article>
+                <p>Si tenés pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, reserva con nosotros para tomar clases de Sumi-e con los
+                    mejores maestros japoneses.
+                </p>
+            
+                <button id="botonReserva">RESEVAR</button> 
+
+              
+
+            </article>
+
 
             <article class="presentacion_temas">
                 <h3 id="ikebana" class="titulos_secundarios">IKEBANA</h3>
@@ -363,30 +425,45 @@
                     como la arquitectura y el diseño de interiores.
                 </p>
 
-                <img src="./imagenes cultura/ikebana 1.jpeg" alt="" class="imagen">
+
+               
                 <img src="./imagenes cultura/ikebana 2.JPG" alt="" class="imagen">
                 <img src="./imagenes cultura/ikebana 3.webp" alt="" class="imagen">
-                <img src="./imagenes cultura/ikebana 4.png" alt="" class="imagen">
+
+                
                 <img src="./imagenes cultura/ikebana 5.jpg" alt="" class="imagen">
                 <img src="./imagenes cultura/ikebana 6.jpg" alt="" class="imagen">
 
             </article>
 
+            <article>
+                <p>Si tenés pensado viajar a Japón en los próximos meses y querés vivir experiencias únicas, disponemos de clases de Ikebana para que puedas realizar
+                    en tu estadía por Japón, reserva con nosotros!
+                </p>
+            
+                <button id="botonReserva">RESEVAR</button> 
+            </article>
+
+
         </section>
-        <!--<article>
-            <ul class="contenido-nav">
-                <li>
-                    <a href="#inicio" title="inicio">Volver al comienzo</a>
-                </li>
-            </ul>
-        </article>-->
+
+        <!--BOTON PARA  SUBIR POR LA PÁGINA-->
+
         <section class="subir_pagina">
             <a href="#img_turismo" id="flecha-arriba"><i class="fa-solid fa-circle-arrow-up fa-bounce"
                     id="ico-arriba"></i></a>
         </section>
 
+
+       <!--SECCIÓN DE  SCRIPTS-->
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../cultura/api/script.js"></script>
+
+
     </main>
 
+    <!--SECCION FOOTER-->
     <footer>
         <section id="footer_info">
             <section>
